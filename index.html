@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      rel="icon"
-      type="image/png"
-      href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico"
-    /> -->
     <title>Telephone Number Validator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -16,11 +11,7 @@
   <body>
     <main id="container">
         <div class="logo">Arc-Hive</div>
-      <!-- <img
-        class="freecodecamp-logo"
-        src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
-        alt="freeCodeCamp Logo"
-      /> -->
+
       <h1>Telephone Number Validator</h1>
       <div class="phone-container">
         <div class="phone-background">
@@ -29,6 +20,23 @@
         <label for="user-input">Enter a Phone Number:</label>
         <input maxlength="20" type="text" id="user-input" value="" />
         <div id="results-div"></div>
+        <section class="keypad-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+            <div class="grid-item">*</div>
+            <div class="grid-item">0</div>
+            <div class="grid-item">#</div>
+            <div class="grid-item">(</div>
+            <div class="grid-item">Space</div>
+            <div class="grid-item">)</div>
+        </section>
         <div class="phone-footer">
           <button class="btn-styles" id="check-btn">Check</button>
           <button class="btn-styles" id="clear-btn">Clear</button>
