@@ -10,7 +10,7 @@ The following project is an adaptation of a short project with the FreeCodeCamp 
 555-555-5555,
 (555)555-5555.
 
-Note that the area code (the fictitious "555") is required. Also, if the country code is provided, the algorithm must confirm that the country code is 1. In a later iteration of this project, I intend to allow validation for the landline telephone numbers for all the countries on Earth. This is the initial submission, however, I intend on "cleaning" up the code, and adding functionality to it as I learn more.
+Note that a three-digit area code is required. Also, if the country code is provided, the algorithm must confirm that the country code is 1. In a later iteration of this project, I intend to allow validation for ACTUAL American telephone numbers, (as some three-digits codes are not allocated as area codes as yet). After that, I intend to extend this functionality to the landline telephone numbers for all the countries on Earth. This is the initial submission, however, I intend on "cleaning" up the code, and adding functionality to it as I learn more.
 
 **User stories**
 1. You should have an input element with an id of "user-input".
