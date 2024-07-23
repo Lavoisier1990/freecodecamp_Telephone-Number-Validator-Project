@@ -104,11 +104,21 @@
   button.grid-item {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 2px solid #2196F3;
     padding: 10px;
     font-size: 20px;
     text-align: center;
   }
+
+  button.grid-item:hover {
+    border: 2px solid white;
+  }
+
+  button.grid-item:active {
+    color: white;
+    background-color: #0D1B1E;
+  }
+
 
   .phone-footer {
     background-color: black;
@@ -119,6 +129,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px red solid;
   }
 
   .btn-styles {
