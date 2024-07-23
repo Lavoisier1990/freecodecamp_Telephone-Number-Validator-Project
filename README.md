@@ -2,13 +2,13 @@
 
 The following project is an adaptation of a short project with the FreeCodeCamp Javascript Algorithms and Data Structures (Beta) track. It is a small project that validates landline telephone numbers from the United States of America. In the US, phone numbers can be formatted in many ways. Here are some examples of valid formats for US phone numbers:
 
-1 555-555-5555
-1 (555) 555-5555
-1(555)555-5555
-1 555 555 5555
-5555555555
-555-555-5555
-(555)555-5555
+1 555-555-5555,
+1 (555) 555-5555,
+1(555)555-5555,
+1 555 555 5555,
+5555555555,
+555-555-5555,
+(555)555-5555.
 
 Note that the area code (the fictitious "555") is required. Also, if the country code is provided, the algorithm must confirm that the country code is 1. In a later iteration of this project, I intend to allow validation for the landline telephone numbers for all the countries on Earth. This is the initial submission, however, I intend on "cleaning" up the code, and adding functionality to it as I learn more.
 
