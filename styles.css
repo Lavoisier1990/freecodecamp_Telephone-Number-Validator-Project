@@ -50,11 +50,11 @@
   .phone-container {
     position: relative;
     background-color: var(--phone-colors);
-    width: 280px;
-    height: 510px;
+    width: 290px;
+    height: 550px;
     margin: 30px auto;
     border-radius: 15px;
-    border: 15px solid black;
+    border: 20px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,13 +63,13 @@
   .phone-background {
     background-color: black;
     width: 100%;
-    height: 25px;
+    height: 50px;
   }
 
   .phone-camera {
     background-color: var(--phone-colors);
-    width: 10px;
-    height: 10px;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
     margin: auto;
   }
@@ -101,11 +101,11 @@
 
   }
 
-  button.grid-item {
+  button.grid-item, button.check-btn, button.backspace {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid #2196F3;
-    padding: 10px;
+    padding: 5px;
     font-size: 20px;
     text-align: center;
   }
@@ -119,6 +119,28 @@
     background-color: #0D1B1E;
   }
 
+  button.check-btn:hover {
+    border: 2px solid white;
+  }
+
+  button.check-btn:active {
+    color: white;
+    background-color: #0D1B1E;
+  }
+
+  button#check-btn, button.backspace {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  button.backspace:hover {
+    border: 2px solid white;
+  }
+
+  button.backspace:active {
+    color: white;
+    background-color: #0D1B1E;
+  }
 
   .phone-footer {
     background-color: black;
@@ -129,19 +151,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px red solid;
+    padding-top: 7px;
+
   }
 
   .btn-styles {
     cursor: pointer;
-    width: 100px;
-    margin: 10px;
+    height: 30px;
+    width: 120px;
     color: #0a0a23;
+    margin: 10px;
     font-size: 18px;
     background-color: #ffffff;
     background-image: linear-gradient(#ffffff, #928d86);
     border-color: #ffffff;
     border-width: 3px;
+    border-radius: 7px;
   }
 
   #results-div {
