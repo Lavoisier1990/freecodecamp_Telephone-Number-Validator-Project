@@ -87,7 +87,7 @@
     text-align: var(--center-text);
     width: 90%;
     height: 42px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   section.keypad-container {
@@ -110,20 +110,11 @@
     text-align: center;
   }
 
-  button.grid-item:hover {
+  button.grid-item:hover, button.check-btn:hover, button.backspace:hover {
     border: 2px solid white;
   }
 
-  button.grid-item:active {
-    color: white;
-    background-color: #0D1B1E;
-  }
-
-  button.check-btn:hover {
-    border: 2px solid white;
-  }
-
-  button.check-btn:active {
+  button.grid-item:active, button.check-btn:active, button.backspace:active {
     color: white;
     background-color: #0D1B1E;
   }
@@ -131,15 +122,6 @@
   button#check-btn, button.backspace {
     grid-column-start: 1;
     grid-column-end: 4;
-  }
-
-  button.backspace:hover {
-    border: 2px solid white;
-  }
-
-  button.backspace:active {
-    color: white;
-    background-color: #0D1B1E;
   }
 
   .phone-footer {
