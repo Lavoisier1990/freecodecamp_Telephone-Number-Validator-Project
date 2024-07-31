@@ -101,7 +101,7 @@
 
   }
 
-  button.grid-item, button.check-btn, button.backspace {
+  button.grid-item, button.full-length-btn {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid #2196F3;
@@ -110,16 +110,16 @@
     text-align: center;
   }
 
-  button.grid-item:hover, button.check-btn:hover, button.backspace:hover {
+  button.grid-item:hover, button.full-length-btn:hover {
     border: 2px solid white;
   }
 
-  button.grid-item:active, button.check-btn:active, button.backspace:active {
+  button.grid-item:active, button.full-length-btn:active {
     color: white;
     background-color: #0D1B1E;
   }
 
-  button#check-btn, button.backspace {
+  button.full-length-btn {
     grid-column-start: 1;
     grid-column-end: 4;
   }
