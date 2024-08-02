@@ -19,3 +19,12 @@ const leftBracketBtn = document.getElementById("left-bracket-btn");
 const spaceBtn = document.getElementById("space-btn");
 const rightBracketBtn = document.getElementById("right-bracket-btn");
 const backspaceBtn = document.getElementById("backspace-btn");
+
+//keypad elements must simulate keyboard buttons being pressed.
+//keypad must be hidden when input field is not in focus.
+//When you click on the #check-btn element without entering a value into the #user-input element, an alert should appear with the text "Please provide a phone number".
+//#check-btn element also empties the input field when clicked.
+//#results-div captures the output of the algorithm's process.
+//putting focus on the input field again hides the #results div without erasing its contents.
+//memory-btn opens the results-div with all previoius results still on.
+//When you click on the #clear-btn element, the content within the #results-div element should be removed.
