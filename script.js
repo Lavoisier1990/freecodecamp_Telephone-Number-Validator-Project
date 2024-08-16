@@ -28,3 +28,31 @@ const backspaceBtn = document.getElementById("backspace-btn");
 //putting focus on the input field again hides the #results div without erasing its contents.
 //memory-btn opens the results-div with all previoius results still on.
 //When you click on the #clear-btn element, the content within the #results-div element should be removed.
+
+
+oneBtn.addEventListener("click", () => {
+   if (userInput.value.length === 0){
+    userInput.focus();
+    userInput.value += 1;
+} else {
+    userInput.value += 1;
+};
+});
+
+twoBtn.addEventListener("click", () => {
+    if (userInput.value.length === 0){
+     userInput.focus();
+     userInput.value += 2;
+ } else {
+     userInput.value += 2;
+ };
+});
+
+threeBtn.addEventListener("click", () => {
+    if (userInput.value.length === 0){
+     userInput.focus();
+     userInput.value += 3;
+ } else {
+     userInput.value += 3;
+ };
+});
