@@ -56,3 +56,111 @@ threeBtn.addEventListener("click", () => {
      userInput.value += 3;
  };
 });
+
+fourBtn.addEventListener("click", () => {
+    if (userInput.value.length === 0){
+     userInput.focus();
+     userInput.value += 4;
+ } else {
+     userInput.value += 4;
+ };
+});
+
+fiveBtn.addEventListener("click", () => {
+     if (userInput.value.length === 0){
+      userInput.focus();
+      userInput.value += 5;
+  } else {
+      userInput.value += 5;
+  };
+});
+
+sixBtn.addEventListener("click", () => {
+     if (userInput.value.length === 0){
+      userInput.focus();
+      userInput.value += 6;
+  } else {
+      userInput.value += 6;
+  };
+});
+
+sevenBtn.addEventListener("click", () => {
+    if (userInput.value.length === 0){
+     userInput.focus();
+     userInput.value += 7;
+ } else {
+     userInput.value += 7;
+ };
+});
+
+eightBtn.addEventListener("click", () => {
+     if (userInput.value.length === 0){
+      userInput.focus();
+      userInput.value += 8;
+  } else {
+      userInput.value += 8;
+  };
+});
+
+nineBtn.addEventListener("click", () => {
+     if (userInput.value.length === 0){
+      userInput.focus();
+      userInput.value += 9;
+  } else {
+      userInput.value += 9;
+  };
+});
+
+starBtn.addEventListener("click", () => {
+    if (userInput.value.length === 0){
+     userInput.focus();
+     userInput.value += "*";
+ } else {
+     userInput.value += "*";
+ };
+});
+
+zeroBtn.addEventListener("click", () => {
+     if (userInput.value.length === 0){
+      userInput.focus();
+      userInput.value += 0;
+  } else {
+      userInput.value += 0;
+  };
+});
+
+hashBtn.addEventListener("click", () => {
+     if (userInput.value.length === 0){
+      userInput.focus();
+      userInput.value += "#";
+  } else {
+      userInput.value += "#";
+  };
+});
+
+leftBracketBtn.addEventListener("click", () => {
+    if (userInput.value.length === 0){
+     userInput.focus();
+     userInput.value += "(";
+ } else {
+     userInput.value += "(";
+ };
+});
+
+spaceBtn.addEventListener("click", () => {
+     if (userInput.value.length === 0){
+      userInput.focus();
+      userInput.value += " ";
+  } else {
+      userInput.value += " ";
+  };
+});
+
+rightBracketBtn.addEventListener("click", () => {
+     if (userInput.value.length === 0){
+      userInput.focus();
+      userInput.value += ")";
+  } else {
+      userInput.value += ")";
+  };
+});

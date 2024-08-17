@@ -101,7 +101,7 @@
 
   }
 
-  button.grid-item, button.full-length-btn {
+  button.grid-item {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid #2196F3;
@@ -110,18 +110,25 @@
     text-align: center;
   }
 
-  button.grid-item:hover, button.full-length-btn:hover {
+  button.grid-item:hover {
     border: 2px solid white;
   }
 
-  button.grid-item:active, button.full-length-btn:active {
+  button.grid-item:active {
     color: white;
     background-color: #0D1B1E;
   }
 
-  button.full-length-btn {
-    grid-column-start: 1;
-    grid-column-end: 4;
+  button#backspace-btn {
+    grid-column: 1 / span 2;
+  }
+
+  button#reset-btn {
+    grid-column: 3 / span 1;
+  }
+
+  button#check-btn {
+    grid-column: 1 / span 2;
   }
 
   .phone-footer {
