@@ -19,6 +19,8 @@ const leftBracketBtn = document.getElementById("left-bracket-btn");
 const spaceBtn = document.getElementById("space-btn");
 const rightBracketBtn = document.getElementById("right-bracket-btn");
 const backspaceBtn = document.getElementById("backspace-btn");
+const dashBtn = document.getElementById("dash-btn");
+const resetBtn = document.getElementById("reset-btn");
 
 //keypad elements must simulate keyboard buttons being pressed.
 //keypad must be hidden when input field is not in focus.
@@ -163,4 +165,26 @@ rightBracketBtn.addEventListener("click", () => {
   } else {
       userInput.value += ")";
   };
+});
+
+dashBtn.addEventListener("click", () => {
+     if (userInput.value.length === 0){
+        userInput.focus();
+        userInput.value += "-";
+  } else {
+        userInput.value += "-";
+  };
+});
+
+resetBtn.addEventListener("click", () => {
+    userInput.value = "";
+});
+
+backspaceBtn.addEventListener("click", () => {
+    if(userInput.value.length === 0){
+        userInput.focus();
+    } else {
+        let backspaced = userInput.value.slice(0, userInput.value.length-1);
+        userInput.value = backspaced;
+    };
 });
