@@ -9,6 +9,7 @@
     --phone-colors: #dfdfe2;
     --center-text: center;
     --gray-00: #fff;
+    --error-color:#a94442;
   }
 
   body {
@@ -169,4 +170,8 @@
     padding: 5px;
     text-align: var(--center-text);
     margin: 10px 0;
+  }
+
+  .error-text {
+    color: var(--error-color);
   }

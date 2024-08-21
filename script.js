@@ -188,3 +188,10 @@ backspaceBtn.addEventListener("click", () => {
         userInput.value = backspaced;
     };
 });
+
+checkBtn.addEventListener("click", () => {
+   if(userInput.value.length === 0){
+    resultsDiv.innerText = "Please provide a phone number";
+    resultsDiv.classList.add("results-text", "error-text");
+}
+});
