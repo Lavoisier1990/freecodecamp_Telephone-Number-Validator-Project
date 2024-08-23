@@ -191,7 +191,14 @@ backspaceBtn.addEventListener("click", () => {
 
 checkBtn.addEventListener("click", () => {
    if(userInput.value.length === 0){
-    resultsDiv.innerText = "Please provide a phone number";
-    resultsDiv.classList.add("results-text", "error-text");
-}
+    const resultParagraph = document.createElement("p");
+    const node = document.createTextNode("Please provide a phone number");
+    resultParagraph.appendChild(node);
+    resultsDiv.appendChild(resultParagraph);
+    resultParagraph.classList.add("results-text", "error-text");
+    };
 });
+
+clearBtn.addEventListener("click", () => {
+    resultsDiv.innerHTML = "";
+})

@@ -161,6 +161,9 @@
 
   #results-div {
     overflow-y: auto;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
     height: 265px;
     width: 100%;
   }
