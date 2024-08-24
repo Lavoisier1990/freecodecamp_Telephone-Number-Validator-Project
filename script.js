@@ -21,6 +21,7 @@ const rightBracketBtn = document.getElementById("right-bracket-btn");
 const backspaceBtn = document.getElementById("backspace-btn");
 const dashBtn = document.getElementById("dash-btn");
 const resetBtn = document.getElementById("reset-btn");
+const entryKeypad = document.querySelectorAll("button.entry");
 
 //keypad elements must simulate keyboard buttons being pressed.
 //keypad must be hidden when input field is not in focus.
