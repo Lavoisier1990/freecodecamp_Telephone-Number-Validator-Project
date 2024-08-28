@@ -21,7 +21,9 @@ const rightBracketBtn = document.getElementById("right-bracket-btn");
 const backspaceBtn = document.getElementById("backspace-btn");
 const dashBtn = document.getElementById("dash-btn");
 const resetBtn = document.getElementById("reset-btn");
-const entryKeypad = document.querySelectorAll("button.entry");
+const keypadBtn = document.getElementById("keypad-btn");
+const entryKeypad = document.getElementById("entry-keys");
+
 
 //keypad elements must simulate keyboard buttons being pressed.
 //keypad must be hidden when input field is not in focus.
@@ -204,6 +206,14 @@ clearBtn.addEventListener("click", () => {
     resultsDiv.innerHTML = "";
 });
 
-entryKeypad.addEventListener("click", () => {
+keypadBtn.addEventListener("click", () => {
+    if (entryKeypad.style.display === "none") {
+        entryKeypad.style.display = "grid";
+      } else {
+        entryKeypad.style.display = "none";
+      }
+});
 
-})
+memoryBtn.addEventListener("click", () => {
+
+});
