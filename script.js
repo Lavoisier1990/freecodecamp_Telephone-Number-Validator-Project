@@ -202,4 +202,8 @@ checkBtn.addEventListener("click", () => {
 
 clearBtn.addEventListener("click", () => {
     resultsDiv.innerHTML = "";
+});
+
+entryKeypad.addEventListener("click", () => {
+
 })
