@@ -215,5 +215,9 @@ keypadBtn.addEventListener("click", () => {
 });
 
 memoryBtn.addEventListener("click", () => {
-
+    if (resultsDiv.style.display === "none") {
+        resultsDiv.style.display = "grid";
+      } else {
+        resultsDiv.style.display = "none";
+      }
 });
