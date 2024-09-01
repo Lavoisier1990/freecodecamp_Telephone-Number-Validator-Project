@@ -192,13 +192,26 @@ backspaceBtn.addEventListener("click", () => {
     };
 });
 
+function telephoneCheck(str) {
+    const regEx = /^[1]?[\s]?(\(\d{3}\)|\d{3})[-\s\.]?\d{3}[-\s\.]?\d{4}$/
+    return regEx.test(str);
+  };
+
 checkBtn.addEventListener("click", () => {
    if(userInput.value.length === 0){
     const resultParagraph = document.createElement("p");
     const node = document.createTextNode("Please provide a phone number");
     resultParagraph.appendChild(node);
     resultsDiv.appendChild(resultParagraph);
+    resultsDiv.insertBefore(resultParagraph, resultsDiv.children[0]);
     resultParagraph.classList.add("results-text", "error-text");
+    } else if (telephoneCheck(userInput.value) === true){
+        const resultParagraph = document.createElement("p");
+        const node = document.createTextNode(`Valid US number: ${userInput.value}`);
+        resultParagraph.appendChild(node);
+        resultsDiv.appendChild(resultParagraph);
+        resultsDiv.insertBefore(resultParagraph, resultsDiv.children[0]);
+        resultParagraph.classList.add("results-text", "valid-text");
     };
 });
 
@@ -221,3 +234,10 @@ memoryBtn.addEventListener("click", () => {
         resultsDiv.style.display = "none";
       }
 });
+
+function telephoneCheck(str) {
+    const regEx = /^[1]?[\s]?(\(\d{3}\)|\d{3})[-\s\.]?\d{3}[-\s\.]?\d{4}$/
+    return regEx.test(str);
+  };
+
+  console.log(telephoneCheck("5550-555-5555"));

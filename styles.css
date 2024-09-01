@@ -10,6 +10,7 @@
     --center-text: center;
     --gray-00: #fff;
     --error-color:#a94442;
+    --valid-color:#008000;
   }
 
   body {
@@ -190,4 +191,8 @@
 
   .error-text {
     color: var(--error-color);
+  }
+
+  .valid-text {
+    color: var(--valid-color);
   }
