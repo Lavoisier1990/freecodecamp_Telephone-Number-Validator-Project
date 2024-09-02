@@ -198,6 +198,7 @@ function telephoneCheck(str) {
   };
 
 checkBtn.addEventListener("click", () => {
+    resultsDiv.style.display = "block";
     entryKeypad.style.display = "none";
    if(userInput.value.length === 0){
     const resultParagraph = document.createElement("p");
@@ -238,7 +239,7 @@ keypadBtn.addEventListener("click", () => {
 
 memoryBtn.addEventListener("click", () => {
     if (resultsDiv.style.display === "none") {
-        resultsDiv.style.display = "grid";
+        resultsDiv.style.display = "block";
       } else {
         resultsDiv.style.display = "none";
       }
