@@ -179,7 +179,6 @@
     overflow-y: auto;
     height: 265px;
     width: 100%;
-    border: solid red 1px;
   }
 
   .results-text {
@@ -187,7 +186,6 @@
     padding: 5px;
     text-align: var(--center-text);
     margin: 5px 0;
-    border: solid red 1px;
   }
 
   .error-text {

@@ -198,6 +198,7 @@ function telephoneCheck(str) {
   };
 
 checkBtn.addEventListener("click", () => {
+    entryKeypad.style.display = "none";
    if(userInput.value.length === 0){
     const resultParagraph = document.createElement("p");
     const node = document.createTextNode("Please provide a phone number");
@@ -224,6 +225,7 @@ checkBtn.addEventListener("click", () => {
 
 clearBtn.addEventListener("click", () => {
     resultsDiv.innerHTML = "";
+    userInput.value = "";
 });
 
 keypadBtn.addEventListener("click", () => {
