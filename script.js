@@ -201,12 +201,7 @@ checkBtn.addEventListener("click", () => {
     resultsDiv.style.display = "block";
     entryKeypad.style.display = "none";
    if(userInput.value.length === 0){
-    const resultParagraph = document.createElement("p");
-    const node = document.createTextNode("Please provide a phone number");
-    resultParagraph.appendChild(node);
-    resultsDiv.appendChild(resultParagraph);
-    resultsDiv.insertBefore(resultParagraph, resultsDiv.children[0]);
-    resultParagraph.classList.add("results-text", "error-text");
+    window.alert("Please provide a phone number");
     } else if (telephoneCheck(userInput.value) === true){
         const resultParagraph = document.createElement("p");
         const node = document.createTextNode(`Valid US number: ${userInput.value}`);
