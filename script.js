@@ -243,10 +243,3 @@ memoryBtn.addEventListener("click", () => {
         resultsDiv.style.display = "none";
       }
 });
-
-function telephoneCheck(str) {
-    const regEx = /^[1]?[\s]?(\(\d{3}\)|\d{3})[-\s\.]?\d{3}[-\s\.]?\d{4}$/
-    return regEx.test(str);
-  };
-
-  console.log(telephoneCheck("5550-555-5555"));
