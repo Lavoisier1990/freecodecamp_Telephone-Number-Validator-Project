@@ -11,6 +11,7 @@
     --gray-00: #fff;
     --error-color:#a94442;
     --valid-color:#008000;
+    --invalid-color: #850000;
   }
 
   body {
@@ -195,4 +196,8 @@
 
   .valid-text {
     color: var(--valid-color);
+  }
+
+  .invalid-text {
+    color: var(--invalid-color);
   }

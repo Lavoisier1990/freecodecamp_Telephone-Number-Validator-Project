@@ -212,6 +212,13 @@ checkBtn.addEventListener("click", () => {
         resultsDiv.appendChild(resultParagraph);
         resultsDiv.insertBefore(resultParagraph, resultsDiv.children[0]);
         resultParagraph.classList.add("results-text", "valid-text");
+    } else {
+        const resultParagraph = document.createElement("p");
+        const node = document.createTextNode(`Invalid US number: ${userInput.value}`);
+        resultParagraph.appendChild(node);
+        resultsDiv.appendChild(resultParagraph);
+        resultsDiv.insertBefore(resultParagraph, resultsDiv.children[0]);
+        resultParagraph.classList.add("results-text", "invalid-text");
     };
 });
 
