@@ -219,6 +219,13 @@ checkBtn.addEventListener("click", () => {
     };
 });
 
+userInput.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      checkBtn.click();
+    }
+  });
+
 clearBtn.addEventListener("click", () => {
     resultsDiv.innerHTML = "";
     userInput.value = "";
